@@ -172,7 +172,7 @@ Chaitanya Arasada
 This project was inspired and guided by the DevOps learning materials created by ## @Abhishek Veeramalla, whose DevOps training content provides a practical and beginner-friendly approach to understanding cloud and DevOps technologies.
 
 ## Contributor / Learning Source:
-@iam-veeramalla
+-@iam-veeramalla
 
 If anyone would like to perform this demo or reproduce the same project, it is highly recommended to refer to the DevOps Zero to Hero learning series available on YouTube, specifically the Docker modules created by Abhishek Veeramalla. These videos provide detailed explanations of containerization concepts, Docker fundamentals, and practical DevOps workflows that help learners build real-world projects step by step.
 
