@@ -149,6 +149,8 @@ Through this project, a simple Python web application was taken through the comp
 This workflow demonstrates important real-world DevOps practices such as containerization, image optimization, secure runtime environments, and container registry publishing. These concepts form the foundation for deploying scalable applications in modern cloud-native platforms.
 
 
+<img width="1920" height="1080" alt="Screenshot (213)" src="https://github.com/user-attachments/assets/deaec8e4-4e43-4962-b1f8-5c7a34f9d141" />
+
 <img width="1920" height="1080" alt="Screenshot (215)" src="https://github.com/user-attachments/assets/87a37287-78c3-4e3b-88f1-2b1e6cd39345" />
 
 <img width="1920" height="1024" alt="Screenshot (220)" src="https://github.com/user-attachments/assets/16cc42d8-4e19-4cca-823b-698092950333" />
