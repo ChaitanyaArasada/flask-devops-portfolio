@@ -147,3 +147,17 @@ Conclusion
 Through this project, a simple Python web application was taken through the complete DevOps workflow. The process began with building the application locally, followed by containerizing it using Docker, publishing the image to Docker Hub, and finally optimizing the container using multi-stage builds and distroless runtime images.
 
 This workflow demonstrates important real-world DevOps practices such as containerization, image optimization, secure runtime environments, and container registry publishing. These concepts form the foundation for deploying scalable applications in modern cloud-native platforms.
+
+
+<img width="1920" height="1080" alt="Screenshot (215)" src="https://github.com/user-attachments/assets/87a37287-78c3-4e3b-88f1-2b1e6cd39345" />
+
+<img width="1920" height="1024" alt="Screenshot (220)" src="https://github.com/user-attachments/assets/16cc42d8-4e19-4cca-823b-698092950333" />
+
+<img width="1920" height="1080" alt="Screenshot (218)" src="https://github.com/user-attachments/assets/00f2eb85-9eb2-4dc5-af5b-9061c47ef612" />
+
+![Uploading Screenshot (219).png…]()
+
+
+<img width="1920" height="1042" alt="Screenshot (209)" src="https://github.com/user-attachments/assets/5dec6f4e-34a9-46c6-89f2-623ae223a84c" />
+
+
