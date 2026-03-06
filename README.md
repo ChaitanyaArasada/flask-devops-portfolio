@@ -189,7 +189,9 @@ GitHub: https://github.com/ChaitanyaArasada
 ## 🙌 Acknowledgement / Learning Source
 
 This project was inspired and guided by the DevOps learning content created by **@iam-veeramalla**. His DevOps training material provides a practical and beginner-friendly approach to understanding cloud and DevOps technologies through real-world examples.
-
+```
+@iam-veeramalla
+```
 The concepts and workflows demonstrated in this repository were learned from the **DevOps Zero to Hero** learning series, where complex DevOps topics are explained in a structured and hands-on manner.
 
 If you would like to reproduce this project or deepen your understanding of Docker and containerization, it is highly recommended to follow the **Docker modules from the DevOps Zero to Hero series** created by @iam-veeramalla.
