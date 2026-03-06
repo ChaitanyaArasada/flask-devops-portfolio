@@ -62,3 +62,88 @@ http://localhost:5000
 ```
 Running the application locally ensured that everything worked correctly before moving to the containerization stage.
 
+
+Step 2 — Containerizing the Application
+
+After verifying that the Flask application worked correctly, the next step was to containerize it using Docker. Containerization allows the application and all its dependencies to be packaged together into a portable environment that can run consistently on any system.
+
+A Dockerfile was created to define how the container image should be built. The base image used for this container was the lightweight Python runtime image:
+```
+python:3.11-slim
+```
+The Dockerfile installs the required Python dependencies, copies the application files into the container, and runs the application using Gunicorn, which is commonly used to run Flask applications in production environments.
+
+The Docker image was built using the command:
+```
+docker build -t flask-devops-portfolio .
+```
+Once the image was successfully created, the container was started using:
+```
+docker run -p 5000:5000 flask-devops-portfolio
+```
+This command maps the container port to the host machine so the application can be accessed through a browser.
+
+The application was then available at:
+```
+http://localhost:5000
+```
+At this stage, the container image size was approximately 250 MB.
+
+
+Step 3 — Publishing the Image to Docker Hub
+
+After successfully building and testing the Docker image locally, the next step was to publish the image to a container registry. Container registries allow images to be stored centrally so they can be pulled and deployed from anywhere.
+
+The image was pushed to Docker Hub by first authenticating with the registry:
+```
+docker login
+```
+Next, the image was tagged with the Docker Hub repository name:
+```
+docker tag flask-devops-portfolio <dockerhub-username>/flask-devops-portfolio:latest
+```
+Finally, the image was uploaded to Docker Hub using:
+```
+docker push <dockerhub-username>/flask-devops-portfolio:latest
+```
+Once the image is available in Docker Hub, it can be pulled from any environment using the docker pull command. This is an essential step in modern DevOps workflows because it allows application images to be distributed to different deployment environments.
+
+Step 4 — Implementing Multi-Stage Docker Builds
+
+Although the initial container worked correctly, the image contained unnecessary build dependencies that increased its size. To improve efficiency and follow production best practices, a multi-stage Docker build was implemented.
+
+In a multi-stage build process, the container build is divided into separate stages. The first stage is responsible for installing dependencies and preparing the application environment. The second stage creates the final runtime image by copying only the required files from the builder stage.
+
+This approach helps remove build tools, temporary files, and unnecessary dependencies from the final image. As a result, the runtime container becomes smaller, cleaner, and more efficient.
+
+Step 5 — Optimizing the Container with Distroless Images
+
+To further optimize the container, the runtime stage of the Docker build was replaced with a distroless image. Distroless images contain only the minimal runtime components required to execute an application.
+
+Unlike traditional container images, distroless containers do not include shells, package managers, or unnecessary operating system utilities. This significantly reduces the container size and improves security by minimizing the attack surface.
+
+By combining multi-stage builds with distroless runtime images, the final container became significantly smaller and more efficient.
+
+Image Size Comparison
+
+After optimization, the container image size was reduced from approximately 250 MB to 155 MB, resulting in a reduction of nearly 38 percent. This improvement leads to faster deployments, reduced storage usage, and improved performance when pulling images from container registries.
+
+Running the Optimized Container
+
+The optimized container image can be built using:
+```
+docker build -t flask-devops-distroless .
+```
+Once the build is complete, the container can be started using:
+```
+docker run -p 5000:5000 flask-devops-distroless
+```
+The optimized application remains accessible through the browser at:
+```
+http://localhost:5000
+```
+Conclusion
+
+Through this project, a simple Python web application was taken through the complete DevOps workflow. The process began with building the application locally, followed by containerizing it using Docker, publishing the image to Docker Hub, and finally optimizing the container using multi-stage builds and distroless runtime images.
+
+This workflow demonstrates important real-world DevOps practices such as containerization, image optimization, secure runtime environments, and container registry publishing. These concepts form the foundation for deploying scalable applications in modern cloud-native platforms.
