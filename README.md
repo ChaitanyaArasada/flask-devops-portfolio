@@ -13,6 +13,17 @@ To further optimize the container, the runtime image was replaced with a distrol
 
 Overall, this project demonstrates several important DevOps concepts including application containerization, image optimization, secure runtime environments, and container registry publishing. These practices are commonly used in modern cloud-native architectures and form the foundation for deploying applications to platforms such as Kubernetes or cloud container services.
 
-⸻
-
-If you want, I can also help you add one final section to the README that will make recruiters immediately impressed, explaining how this project simulates a real production DevOps workflow.
+##project structure
+flask-devops-portfolio/
+│
+├── app.py
+├── requirements.txt
+├── Dockerfile
+│
+├── templates/
+│   └── portfolio.html
+│
+├── static/
+│   └── style.css
+│
+└── README.md
