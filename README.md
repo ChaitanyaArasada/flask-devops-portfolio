@@ -29,3 +29,36 @@ flask-devops-portfolio/
 │
 └── README.md
 ~~~
+
+
+The app.py file contains the core logic of the application built using Flask. It defines the Flask application instance and the route that renders the portfolio webpage. The application uses Flask’s template rendering system to serve an HTML page stored inside the templates directory.
+
+The requirements.txt file contains all the Python dependencies required for the application to run. When the application is built inside a container, these dependencies are automatically installed so that the application environment remains consistent across different systems.
+
+The templates directory contains the HTML files used by Flask’s templating engine. In this project, the portfolio.html file represents the main portfolio webpage that is rendered when users access the root endpoint of the application.
+
+The static directory contains static resources such as CSS files. The style.css file is responsible for styling the portfolio page and improving the visual appearance of the application interface.
+
+The Dockerfile defines how the application is packaged into a container image using Docker. It specifies the base image, working directory, dependency installation steps, and the command used to run the application.
+
+
+Step 1 — Building the Flask Application
+
+The first step in this project was to develop a simple web application using Flask. The purpose of this application is to serve a personal DevOps portfolio page through a web browser. Flask was chosen because it is lightweight and widely used for building Python web applications.
+
+Inside the app.py file, the Flask application instance is created and a route is defined to render the portfolio page. The application listens on 0.0.0.0 and port 5000 so that it can accept external connections when running inside a container environment.
+
+efore containerizing the application, the dependencies were installed locally using the following command:
+```
+pip install -r requirements.txt
+```
+Once the dependencies were installed, the application was executed locally using:
+```
+python app.py
+```
+The application could then be accessed in a web browser at:
+```
+http://localhost:5000
+```
+Running the application locally ensured that everything worked correctly before moving to the containerization stage.
+
