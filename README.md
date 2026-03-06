@@ -155,7 +155,8 @@ This workflow demonstrates important real-world DevOps practices such as contain
 
 <img width="1920" height="1080" alt="Screenshot (218)" src="https://github.com/user-attachments/assets/00f2eb85-9eb2-4dc5-af5b-9061c47ef612" />
 
-![Uploading Screenshot (219).png…]()
+<img width="1920" height="1031" alt="Screenshot (219)" src="https://github.com/user-attachments/assets/bb43468d-3c65-4286-9e7d-97526cd78296" />
+
 
 
 <img width="1920" height="1042" alt="Screenshot (209)" src="https://github.com/user-attachments/assets/5dec6f4e-34a9-46c6-89f2-623ae223a84c" />
