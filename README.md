@@ -164,19 +164,36 @@ This workflow demonstrates important real-world DevOps practices such as contain
 
 
 
-This project was implemented as part of my hands-on DevOps learning journey while exploring containerization and container optimization techniques. The goal of the project was to understand how a simple Python web application can move through the full lifecycle of development, containerization, optimization, and distribution using modern DevOps practices. By building this project step by step, I gained practical experience with application packaging, Docker image creation, container runtime configuration, and advanced optimization techniques such as multi-stage builds and distroless images.
+## 📘 Project Background
 
-Author:
-Chaitanya Arasada
+This project was implemented as part of my hands-on **DevOps learning journey**, focusing on containerization and container optimization techniques. The primary objective was to understand how a simple Python web application progresses through the complete lifecycle of modern DevOps practices — from application development to containerization, optimization, and distribution.
 
-This project was inspired and guided by the DevOps learning materials created by ## @Abhishek Veeramalla, whose DevOps training content provides a practical and beginner-friendly approach to understanding cloud and DevOps technologies.
+Throughout this project, I gained practical experience in:
 
-## Contributor / Learning Source:
--@iam-veeramalla
+* Packaging and structuring a Python web application
+* Building and managing Docker images
+* Configuring container runtime environments
+* Implementing optimization techniques such as **multi-stage Docker builds**
+* Creating lightweight and secure containers using **distroless images**
 
-If anyone would like to perform this demo or reproduce the same project, it is highly recommended to refer to the DevOps Zero to Hero learning series available on YouTube, specifically the Docker modules created by Abhishek Veeramalla. These videos provide detailed explanations of containerization concepts, Docker fundamentals, and practical DevOps workflows that help learners build real-world projects step by step.
+This project helped strengthen my understanding of how applications are prepared for production environments using modern DevOps workflows.
 
-The Docker tutorials in the DevOps Zero to Hero series explain the foundational concepts behind cont
+---
+
+## 👨‍💻 Author
+
+**Chaitanya Arasada**
+GitHub: https://github.com/ChaitanyaArasada
+
+---
+
+## 🙌 Acknowledgement / Learning Source
+
+This project was inspired and guided by the DevOps learning content created by **@iam-veeramalla**. His DevOps training material provides a practical and beginner-friendly approach to understanding cloud and DevOps technologies through real-world examples.
+
+The concepts and workflows demonstrated in this repository were learned from the **DevOps Zero to Hero** learning series, where complex DevOps topics are explained in a structured and hands-on manner.
+
+If you would like to reproduce this project or deepen your understanding of Docker and containerization, it is highly recommended to follow the **Docker modules from the DevOps Zero to Hero series** created by @iam-veeramalla.
 
 
 
