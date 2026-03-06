@@ -178,14 +178,13 @@ Throughout this project, I gained practical experience in:
 
 This project helped strengthen my understanding of how applications are prepared for production environments using modern DevOps workflows.
 
----
 
 ## 👨‍💻 Author
 
 **Chaitanya Arasada**
 GitHub: https://github.com/ChaitanyaArasada
 
----
+
 
 ## 🙌 Acknowledgement / Learning Source
 
