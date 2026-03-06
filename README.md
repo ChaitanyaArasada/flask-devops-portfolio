@@ -14,6 +14,7 @@ To further optimize the container, the runtime image was replaced with a distrol
 Overall, this project demonstrates several important DevOps concepts including application containerization, image optimization, secure runtime environments, and container registry publishing. These practices are commonly used in modern cloud-native architectures and form the foundation for deploying applications to platforms such as Kubernetes or cloud container services.
 
 ## project structure
+~~~
 flask-devops-portfolio/
 │
 ├── app.py
@@ -27,4 +28,4 @@ flask-devops-portfolio/
 │   └── style.css
 │
 └── README.md
-
+~~~
